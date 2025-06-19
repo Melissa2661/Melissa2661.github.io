@@ -1,0 +1,114 @@
+/* body {
+  font-family: 'Red Hat Display', sans-serif;
+  margin: 0;
+  padding: 0em;
+  box-sizing: border-box;
+  background-color: #fff;
+} */
+
+header {
+  width: 100%;
+  background-color: #f0f0f042;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+
+header a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+main {
+  padding: 5rem;
+  padding-top: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  
+  max-width: 1000px;
+  width: 100%;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.profile-img {
+  flex: 0 0 150px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("Pensive_wolf.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.info {
+  flex: 2 1 300px;
+}
+
+.info h1 {
+  padding-top: 1rem;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.info h2, .interests p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.interests {
+  margin: 3rem 7rem;
+  padding: 1rem;
+  background-color: #f0f0f05d;
+}
+
+@media (max-width: 600px) {
+  body {
+    text-align: center;
+    margin: 0;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .profile-img {
+    flex: none;
+    width: 150px;
+    height: 150px;
+  }
+
+  .info {
+    text-align: center;
+    margin: 0 auto;
+    flex: 2 1 1em;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  .interests {
+  margin: 0;
+  padding: 1rem;
+  }
+
+  main {
+  padding: 2rem;
+}
+}
