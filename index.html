@@ -1,15 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Melissa Katz's Personal Page</title>
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css" />
   <link rel="stylesheet" href="./background.css" />
+  <link rel="icon" href="imgs/Pensive_wolf.jpg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
 </head>
+<style>
+  :root {
+  --bulma-primary-h: 52deg;
+  --bulma-primary-l: 78%;
+  --bulma-link-h: 188deg;
+  --bulma-link-l: 73%;
+  --bulma-info-h: 229deg;
+  --bulma-info-l: 83%;
+  --bulma-success-s: 69%;
+  --bulma-success-l: 63%;
+  --bulma-warning-h: 36deg;
+  --bulma-danger-l: 62%;
+  }
+</style>
 <body>
-  <div id="header-container"></div>
+  
+
+
+  <!-- Image and name -->
+  <section class="section">
+    <!-- <div class="container"> -->
+      <div class="columns is-vcentered" style="width: 100%;">
+        <div class="column has-text-centered-mobile is-narrow-mobile is-narrow-desktop is-offset-2-desktop">
+          <img src="imgs/self.jpg" style="height: 200px; border-radius: 50%; max-width: 100%;">
+        </div>
+        <div class="column has-text-centered-mobile is-full-mobile is-narrow-desktop">
+          <h1 class="has-text-primary">Melissa Katz</h1>
+          <h2 class="has-text-primary" style="padding-bottom: 10px;">PhD student, McGill University</h2>
+          <nav class="breadcrumb is-centered is-small" aria-label="breadcrumbs">
+            <ul>
+              <li>
+                <a href="pdf/Melissa_Katz_CV.pdf">
+                  <span>CV</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/Melissa2661">
+                  <span>Github</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/melissa-katz-6aa817235/">
+                  <span>Linkedin</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    <!-- </div> -->
+  </section>
+
+  <!-- About me -->
+  <section class="section"  style="z-index: 10;">
+    <div class="message is-info">
+      <div class="message-header">About</div>
+      <div class="message-body">
+        Hello! I am pursuing a PhD in Computer Science at McGill University, 
+        under the supervision of Paul Kry and Sheldon Andrews, who were also my supervisors during my Master's.
+        My research area is computer graphics, more specifically physics-based animation.
+        I am greatly interested in the simulation of natural phenomena, applications in AR/VR, and digital twins,
+        although I love engaging with just about any emerging graphics research.
+        <br><br><br>
+        <b>I will be at SIGGRAPH 2025 as a student volunteer! Would be happy to chat about almost anything.  </b>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section class="section">
+    <div class="message is-info">
+      <div class="message-header">Research</div>
+      <div class="message-body">
+        <div class="section">
+          <div class="columns is-vcentered">
+            <div class="column">
+              <img src="imgs/RMR-teaser.png">
+            </div>
+            <div class="column">
+              <div class="is-size-4 has-text-weight-bold">
+                Rig My Ride: Automatic Rigging of Physics-Based Characters for Games
+              </div>
+              <div style="padding-bottom: 30px;">
+                Melissa Katz, Paul G. Kry, Sheldon Andrews <br>
+                <i>Symposium on Computer Animation (PACMGIT), 2025</i>
+              </div>
+
+              <nav class="breadcrumb is-left is-small" aria-label="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="https://melissa2661.github.io/RigMyRide/">
+                      <span>Project Page</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="pdf/Katz_2025_Rig-My-Ride.pdf">
+                      <span>Paper</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=DDKnC0LoG4w">
+                      <span>Video</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          
+        </div>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="message is-info">
+      <div class="message-header">Personal Projects</div>
+      <div class="message-body">
+        <div class="section">
+          <div></div>
+          
+        <div class="is-size-4 has-text-weight-bold">
+          CUBS (A Collection of Useful Blender Scripts)
+        </div>
+        <div style="padding-bottom: 30px;">
+          While working on my Rig My Ride, I created a few Blender scripts to make my figures pop. If anyone also wants awesome figures they are more than welcome to use / adapt these scripts. Suggestions for new scripts to add are also welcome!
+        </div>
+        <nav class="breadcrumb is-left is-small" aria-label="breadcrumbs">
+          <ul>
+            <li>
+              <a href="https://github.com/Melissa2661/cubs">
+                <span>Github</span>
+              </a>
+            </li>
+            <li>
+              <a href="pdf/Blender_for_CS.pdf">
+                <span>Indroductory Presentation</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="message is-info">
+      <div class="message-header">Teaching</div>
+      <div class="message-body">
+        I was a teaching assistant for the following McGill courses:
+        <ul style="padding-left: 5px;">
+          <li><b>COMP 360 (Algorithm Design)</b>, Fall 2023</li>
+          <li><b>COMP 557 (Introduction to Computer Graphics)</b>, Winter 2024, <i>(upcoming)</i> Fall 2025</li>
+          <li><b>ECSE 546 (Advanced Image Synthesis)</b>, Fall 2024</li>
+          <li><b>COMP 250 (Introduction to Computer Science)</b>, Winter 2025</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
   <div class='light x1'></div>
   <div class='light2 x2'></div>
   <div class='light x3'></div>
@@ -20,29 +182,7 @@
   <div class='light x8'></div>
   <div class='light2 x9'></div>
 
-  <main>
-    <div class="container">
-    <div class="profile-img"></div>
-    <div class="info">
-      <h1>Melissa Katz</h1>
-      <h2>PhD student, McGill University</h2>
-      
-    </div>
-    </div>
 
-
-  <div class="interests">
-    <h3>About</h3>
-    <p>Hello! I am pursuing a PhD in Computer Science at McGill University, 
-      under the supervision of Paul Kry and Sheldon Andrews, who were also my supervisors during my Master's.
-      My research area is computer graphics, more specifically physics-based animation.
-      I am greatly interested in the simulation of natural phenomena, applications in AR/VR, and digital twins,
-      although I love engaging with just about any emerging graphics research.
-    </p>
-  </div>
-  </main>
-
-  <!-- <script src="header-loader.js"></script> -->
 </body>
 </html>
 

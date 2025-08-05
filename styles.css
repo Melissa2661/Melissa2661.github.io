@@ -38,11 +38,10 @@ main {
 }
 
 .profile-img {
-  flex: 0 0 150px;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  background-image: url("Pensive_wolf.jpg");
+  background-image: url("self.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,43 +71,4 @@ main {
   margin: 3rem 7rem;
   padding: 1rem;
   background-color: #f0f0f05d;
-}
-
-@media (max-width: 600px) {
-  body {
-    text-align: center;
-    margin: 0;
-  }
-
-  .container {
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
-  .profile-img {
-    flex: none;
-    width: 150px;
-    height: 150px;
-  }
-
-  .info {
-    text-align: center;
-    margin: 0 auto;
-    flex: 2 1 1em;
-  }
-
-  header {
-    justify-content: center;
-  }
-
-  .interests {
-  margin: 0;
-  padding: 1rem;
-  }
-
-  main {
-  padding: 2rem;
-}
 }
